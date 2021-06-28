@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXTreeTableView?>
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
@@ -98,7 +99,7 @@
                   <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="300.0" styleClass="menu-bar-search-field-box" VBox.vgrow="ALWAYS">
                      <children>
                         <FontAwesomeIcon iconName="SEARCH" size="2em" styleClass="menu-bar-btns-icon" />
-                        <TextField maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" promptText="Search for a job, task or resume" style="-fx-background-color: transparent;" styleClass="menu-bar-search-field" HBox.hgrow="ALWAYS">
+                        <TextField maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" promptText="chercher par code étudiant" style="-fx-background-color: transparent;" styleClass="menu-bar-search-field" HBox.hgrow="ALWAYS">
                            <font>
                               <Font name="Calibri" size="16.0" />
                            </font>
@@ -111,11 +112,15 @@
                         <Insets left="25.0" right="25.0" top="15.0" />
                      </VBox.margin>
                   </HBox>
-                  <JFXTreeTableView VBox.vgrow="ALWAYS">
+                  <TableView prefHeight="436.0" prefWidth="774.0" VBox.vgrow="ALWAYS">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="Nom" />
+                      <TableColumn prefWidth="75.0" text="Prénom" />
+                    </columns>
                      <VBox.margin>
                         <Insets bottom="15.0" left="25.0" right="25.0" top="15.0" />
                      </VBox.margin>
-                  </JFXTreeTableView>
+                  </TableView>
                </children>
             </VBox>
          </children>
