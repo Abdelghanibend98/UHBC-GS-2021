@@ -56,6 +56,18 @@ public class UhbcGs2021Application extends Application implements CommandLineRun
 	@Override
 	public void run(String... args) throws Exception {
 		
+//		String simpleMlp = new ClassPathResource("games.h5").getFile().getPath();
+//        MultiLayerNetwork model = KerasModelImport.importKerasSequentialModelAndWeights(simpleMlp);
+//        //make a random sample
+//        int inputs = 10;
+//        INDArray features = Nd4j.zeros(inputs);
+//        for (int i=0; i<inputs; i++) 
+//        features.putScalar(new int[] {i}, Math.random() < 0.5 ? 0 : 1);
+//        //get the prediction
+//        double prediction = model.output(features).getDouble(0);
+	
+//		INDArray features = Nd4j.zeros(10);
+//		System.out.println(features);
 	}
 
 }
